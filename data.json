@@ -1,0 +1,23 @@
+{
+    "transactions": [
+      {
+        "description": "Salary",
+        "amount": 3000,
+        "type": "income",
+        "date": "2025-03-01"
+      },
+      {
+        "description": "Groceries",
+        "amount": 150,
+        "type": "expense",
+        "date": "2025-03-02"
+      },
+      {
+        "description": "Rent",
+        "amount": 1000,
+        "type": "expense",
+        "date": "2025-03-01"
+      }
+    ]
+  }
+  

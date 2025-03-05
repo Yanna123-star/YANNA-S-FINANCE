@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #8e44ad, #3498db); /* Beautiful gradient background */
+    color: #fff; /* White text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px; /* Set a maximum width to keep content neat */
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Blur effect for background */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start;
+    align-items: center; /* Center horizontally */
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #f39c12; /* Set the color for the title - this is the gold color */
+    text-transform: uppercase; /* Make the name uppercase */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for extra effect */
+  }
+  
+  .subheading {
+    font-size: 18px;
+    color: #7f8c8d;
+    font-weight: 300;
+  }
+  
+  h2 {
+    font-size: 26px;
+    color: #34495e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    width: 100%; /* Ensure each section takes the full width */
+  }
+  
+  /* Form Section */
+  .form-section {
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Form takes up the full container width */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #7f8c8d;
+    font-weight: 600;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #3498db;
+  }
+  
+  /* Transactions Section */
+  .transactions-section {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .transaction-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  .transaction-item.income {
+    border-left: 6px solid #27ae60;
+  }
+  
+  .transaction-item.expense {
+    border-left: 6px solid #e74c3c;
+  }
+  
+  .transaction-item button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .transaction-item button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Summary Section */
+  .summary-section p {
+    font-size: 20px;
+    color: #34495e;
+    margin: 10px 0;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  #totalIncome, #totalExpenses, #balance {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  /* Additional Animation */
+  button, .transaction-item button {
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover, .transaction-item button:hover {
+    transform: scale(1.05);
+  }
+  

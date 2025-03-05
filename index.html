@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yanna's Financial Tracker - Track your finances in Peso">
+  <meta name="keywords" content="financial tracker, expenses, income, budget, peso">
+  <meta name="author" content="Yanna">
+  <title>Yanna's Financial Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Yanna's Financial Tracker</h1>
+      <p class="subheading">Track your expenses and income effortlessly in Philippine Peso (₱)</p>
+    </header>
+
+    <section class="form-section">
+      <h2>Add a Transaction</h2>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <input type="text" id="description" placeholder="Enter description" />
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+      </div>
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+      </div>
+      <button id="addTransactionBtn">Add Transaction</button>
+    </section>
+
+    <section class="transactions-section">
+      <h2>Transactions</h2>
+      <ul id="transactionsList"></ul>
+    </section>
+
+    <section class="summary-section">
+      <h2>Summary</h2>
+      <p><strong>Total Income:</strong> ₱<span id="totalIncome">0</span></p>
+      <p><strong>Total Expenses:</strong> ₱<span id="totalExpenses">0</span></p>
+      <p><strong>Balance:</strong> ₱<span id="balance">0</span></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="styles.css">
